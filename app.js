@@ -1,3 +1,6 @@
+let cross = document.querySelector('i');
+let instr = document.querySelector('.instrunction');
+
 let h3 = document.querySelector('h2');
 let h4 = document.querySelector('h3');
 let userseq = [];
@@ -108,3 +111,7 @@ function reset() {
     level = 0;
     startGame = false;
 }
+
+cross.addEventListener('click',function(){
+    instr.classList.add('close');
+})
