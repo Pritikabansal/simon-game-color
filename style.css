@@ -9,6 +9,36 @@ body {
     background-color: black;
 }
 
+i{
+    position: absolute;
+    font-size: xx-large;
+    right: 0;
+    margin-right: 30px;
+    top: 30px;
+    color: rgb(132, 132, 132);
+}
+
+.instrunction{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.767);
+    color: rgb(255, 255, 255);
+    height: 80%;
+    padding: 1rem;
+    overflow: auto;
+}
+.heading-inst{
+    color: rgb(255, 255, 255);
+    margin-bottom: 50px;
+}
+.instrunction p{
+    text-align: start;
+    font-size: large;
+    margin: 20px;
+}
+
+.close{
+    display: none;
+}
 h1 {
     margin: 4rem 0 2rem 0;
     color: white;
