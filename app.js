@@ -1,5 +1,6 @@
 let cross = document.querySelector('i');
 let instr = document.querySelector('.instrunction');
+let touch = document.querySelector('.mainbox');
 
 let h3 = document.querySelector('h2');
 let h4 = document.querySelector('h3');
@@ -12,7 +13,8 @@ let startGame = false;
 let level = 0;
 
 // touchstart event--->>>
-document.addEventListener('touchstart',function(){
+touch.addEventListener('touchstart',function(event){
+    event.stopPropagation();
     if (startGame == false) {
         console.log("game started");
         startGame = true;
@@ -112,6 +114,6 @@ function reset() {
     startGame = false;
 }
 
-cross.addEventListener('click',function(){
+cross.addEventListener('click',function(event){
     instr.classList.add('close');
 })
